@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="SGE1.css"/>
+	<script language="JavaScript" src="SGE.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
+    <link rel="shortcut icon" href="iconeSGE.jpeg" >
+
+    <title>Dados Pessoais</title>
+	
+	<!--LOGO-->
+
+</head>
+
+<body>
+
+	<!---------------------AREA DE SAIR E ID DO USUÁRIO-------------------->
+	<header>
+                <div class="dados">
+                     
+                    <img src="" alt=""/><br>
+                    
+                </div>
+	</header>
+	<!---------------------------MENU ESQUERDO----------------------------->
+	<nav class="menu">
+
+		<img src="logoSGE.jpeg" style="height: 41%;"/>
+            <ul>
+                <li> <a href="inicial.html">Pagina Inicial</a> </li>
+                <li> <a href="aulas.html">Locais/Horários de Aula</a> </li>
+                <li> <a href="boletins.html">Boletins</a> </li>
+                <li> <a href="disciplinas.html">Disciplinas</a> </li>
+                <li> <a href="rematricula.html">Rematrícula</a> </li>
+                <li> <a href="atividades.html">Atividades Extracurriculares</a> </li>
+                <li> <a href="cursos.html">Cursos</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li> 
+                <li><input type="button" class="sair" onclick="logoff()" value="Sair" /></li>
+            </ul>
+	
+	</nav>
+
+
+
+	<!-----------------------BOTÃO DADOS DO USUÁRIO------------------------>
+	<div class="usuario">
+		<button onclick="myFunction()" class="inside">Dados do Usuário</button>
+			<div id="caida" class="opcoes">
+				<a href="cadastrarUsuario.html">Cadastrar</a>
+				<a href="alterarUsuario.html">Alterar</a>
+				<a href="verUsuario.html">Visualizar</a>
+			</div>
+	</div>
+	<br>		
+	<br>	
+	<br>		
+	<!------------------------CONTEUDO DA PAGINA--------------------------->
+	<div  class="conteudo">
+	
+		<div class="verUsuario">
+			<div id="256256">
+				
+				<fieldset class="usuarioDados">
+					<legend>Dados Pessoais</legend>
+						Nome:&nbsp; Josué Albertino Pereira <br>
+						Data de Nascimento:&nbsp; 05/11/2002<br>
+						RG:&nbsp; 963.852.741-5<br>
+						CPF:&nbsp; 147.258.369-20<br>
+						Responsável (opcional):&nbsp; Joana Pereira<br>
+				</fieldset>
+				<fieldset class="usuarioCurso">
+					<legend>Informações do Curso</legend>
+						Ingresso:&nbsp fevereiro de 2020<br>
+						Previsão de Término:&nbsp; novembro de 2025<br>
+						Telefone:&nbsp;(12)3636-4578<br>
+						Telefone Secundário:&nbsp;-<br>
+						Atividade:&nbsp;Aluno<br>
+						Curso:&nbsp; Engenharia Mecatrônica<br>
+						N°de Matrícula:&nbsp; 256256<br>
+						Turno:&nbsp; Integral &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Período:&nbsp; 3°<br>
+				</fieldset>
+			</div>
+			<br>
+		</div>
+	
+	<br>
+	</div>
+	
+	
+	
+	<!-------------------------RODAPÉ DA PÁGINA---------------------------->
+	<footer>
+			Dados de contato da instituição.
+	</footer>
+	
+	
+	
+	<!-------------O QUE FAZ FUNCIONAR O BOTÃO DADOS DO USUÁRIO------------->
+
+</body>
+
+</html>

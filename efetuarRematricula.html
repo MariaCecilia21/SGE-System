@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="SGE.css"/>
+    <script language="JavaScript" src="SGE.js"></script>
+    <script language="JavaScript" src="SGE1.js"></script>
+    <script language="JavaScript" src="SGE2.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
+    <link rel="shortcut icon" href="iconeSGE.jpeg" >
+
+    <title>Rematrícula</title>
+	
+	<!--LOGO-->
+
+</head>
+
+<body>
+
+	<!---------------------AREA DE SAIR E ID DO USUÁRIO-------------------->
+	<header>
+                <div class="dados">
+                    
+                    <img src="" alt=""/><br>
+                    
+                </div>
+	</header>
+	
+	<!---------------------------MENU ESQUERDO----------------------------->
+	<nav class="menu">
+
+            <img src="logoSGE.jpeg" style="height: 41%;" alt=""/>
+            <ul>
+                <li> <a href="inicial.html">Pagina Inicial</a> </li>
+                <li> <a href="aulas.html">Locais/Horários de Aula</a> </li>
+                <li> <a href="boletins.html">Boletins</a> </li>
+                <li> <a href="disciplinas.html">Disciplinas</a> </li>
+                <li> <a href="rematricula.html">Rematrícula</a> </li>
+                <li> <a href="atividades.html">Atividades Extracurriculares</a> </li>
+                <li> <a href="cursos.html">Cursos</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li> 
+                <li><input type="button" class="sair" onclick="logoff()" value="Sair" /></li>
+            </ul>
+	
+	</nav>
+
+
+
+	<!-----------------------BOTÃO DADOS DO USUÁRIO------------------------>
+	<div class="usuario">
+            <button onclick="myFunction()" class="inside">Dados do Usuário</button>
+            <div id="caida" class="opcoes">
+            <a href="cadastrarUsuario.html">Cadastrar</a>
+            <a href="alterarUsuario.html">Alterar</a>
+            <a href="verUsuario.html">Visualizar</a>
+            </div>
+	</div>
+			
+			
+			
+	<!------------------------CONTEUDO DA PAGINA--------------------------->
+	<div  class="conteudo">
+            
+            <button type="button" onclick="Action4()" value="Deferir/Indeferir" class="editor"><img src="edit-file.png" class="edicao"/></button><br>
+            
+		
+            <form action="/action_page.php" method="get" id="form1">
+                Confirme seus dados:
+                <table class="Tabela">
+                    <tr>
+                        <td colspan="2">Nome: </td> 
+                    </tr>
+                    <tr>
+                        <td>RG: </td>
+                        <td>Responsável: </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">CPF: </td>
+                    </tr>
+                    <tr>
+                        <td>Telefone: </td>
+                        <td>Secundário: </td>
+                    </tr>
+                </table>
+
+                <input type="button" onclick="dadosCorretos(this.value)"  value="Cornfirmar">
+                <input type="button" onclick="alert('Atualizar dados com a coordenação, ou sua rematrícula não poderá ser concluída.\n ATENÇÃO! Fique atento ao prazo de rematrícula!')" value="Não Confirmar">
+                
+                
+            </form>
+                
+            <form>
+                
+                Escolha as disciplinas que deseja se inscrever a seguir: 
+                <table class="Tabela">
+                    <tr >
+                        <td ><input type="checkbox" name="opcao" > </td> 
+                        <td>Vespertino </td>
+                        <td>Matemática </td>
+                        <td>José Alberto da Cunha </td>
+                        <td>13:00 </td>
+                    </tr>
+                    <tr>
+                        <td ><input type="checkbox" name="opcao" > </td> 
+                        <td>Noturno </td>
+                        <td>Algebra</td>
+                        <td>José Alberto da Cunha </td>
+                        <td>21:00 </td>
+                    </tr>
+                </table>
+                
+            
+                
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Enviar</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    Deseja prosseguir?
+                    <input type="button" onclick="alert('Solicitação enviada!')" value="Cornfirmar e Salvar">
+                    <input type="button" onclick="" value="Editar Dados">
+                  </div>
+
+                </div>
+                
+            </form>
+            
+            
+                
+	</div>
+	
+	
+	
+	<!-------------------------RODAPÉ DA PÁGINA---------------------------->
+	<footer>
+			Dados de contato da instituição.
+	</footer>
+	
+        
+
+</body>
+
+</html>

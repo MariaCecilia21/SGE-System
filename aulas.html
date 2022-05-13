@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="SGE1.css"/>
+    <script language="JavaScript" src="SGE.js"></script>
+    <script language="JavaScript" src="SGE2.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
+    <link rel="shortcut icon" href="iconeSGE.jpeg" >
+
+    <title>Locais e Horários</title>
+	
+	<!--LOGO-->
+
+</head>
+
+<body>
+
+	<!---------------------AREA DE SAIR E ID DO USUÁRIO-------------------->
+	<header>
+                <div class="dados">
+                     
+                    <img src="" alt=""/><br>
+                    
+                </div>
+	</header>
+	
+	<!---------------------------MENU ESQUERDO----------------------------->
+	<nav class="menu">
+
+		<img src="logoSGE.jpeg" style="height: 41%;" alt=""/>
+            <ul>
+                <li> <a href="inicial.html">Pagina Inicial</a> </li>
+                <li> <a href="aulas.html">Locais/Horários de Aula</a> </li>
+                <li> <a href="boletins.html">Boletins</a> </li>
+                <li> <a href="disciplinas.html">Disciplinas</a> </li>
+                <li> <a href="rematricula.html">Rematrícula</a> </li>
+                <li> <a href="atividades.html">Atividades Extracurriculares</a> </li>
+                <li> <a href="cursos.html">Cursos</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li> 
+                <li><input type="button" class="sair" onclick="logoff()" value="Sair" /></li>
+            </ul>
+	
+	</nav>
+
+
+
+	<!-----------------------BOTÃO DADOS DO USUÁRIO------------------------>
+	<div class="usuario">
+		<button onclick="myFunction()" class="inside">Dados do Usuário</button>
+			<div id="caida" class="opcoes">
+				<a href="cadastrarUsuario.html">Cadastrar</a>
+				<a href="alterarUsuario.html">Alterar</a>
+				<a href="verUsuario.html">Visualizar</a>
+			</div>
+	</div>
+			
+			
+			
+	<!------------------------CONTEUDO DA PAGINA--------------------------->
+	<div  class="conteudo">
+		
+		<button type="button" onclick="Action6()" value="Cadastrar" class="editor"><img src="edit-file.png" class="edicao"/></button><br>
+		
+		
+		<form class="verAulas" action="" >
+		<fieldset class="aulas">
+		<legend>Selecione as opções abaixo:</legend>
+		<label style="font-weight: bold;">Curso:</label>
+			<select class="curso">
+				<option></option>
+				<option id="c1">Engenharia Mecatronica</option>
+				<option id="c2">Ciência da Computação - Integral</option>
+				<option id="c3">Engenharia de Automação</option>
+				<option id="c4">Sistemas de Informação</option>
+					   
+			</select>
+                <br><br>
+		<label style="font-weight: bold;">Período:</label>	
+			<select class="periodo" >
+				<option></option>
+				<option id="p1">1º Período</option>
+				<option id="p2">2º Período</option>
+			    <option id="p3">3º Período</option>
+				<option id="p4">4º Período</option>
+				<option id="p5">5º Período</option>
+				<option id="p6">6º Período</option>
+				<option id="p7">7º Período</option>
+				<option id="p8">8º Período</option>
+			</select>
+                <br><br>
+				<a href="horarios.html"><input class="ok" type="button" value="OK"/></a>
+			</fieldset>
+				
+		</form>
+		
+		<!--LOCAIS DE AULA
+		<table>
+			<caption>Locais de Aula</caption>
+				<tr>
+					<th style="font-weight: bold;">Disciplina</th>
+					<th style="font-weight: bold;">Local</th>
+					<th style="font-weight: bold;">Professor(a)</th>
+				</tr>
+				<tr>
+					<td>Calculo I</td>
+					<td>Sala 01</td>
+					<td></td>
+					
+				</tr>
+				<tr>
+					<td>Geometria</td>
+					<td>Sala 04</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>D.Tecnico</td>
+					<td>Lab. 01</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Física I</td>
+					<td>Sala 01</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Matemática</td>
+					<td>Sala 03</td>
+					<td>José Alberto</td>
+				</tr>
+		</table>-->
+		
+		<br>
+		<br>
+		
+		<!--HORÁRIOS DE AULA
+		<table>
+			<caption>Horários de Aula</caption>
+			
+				
+				<tr>
+					<th></th>
+					<th style="font-weight: bold;">Segunda</th>
+					<th style="font-weight: bold;">Terça</th>
+					<th style="font-weight: bold;">Quarta</th>
+					<th style="font-weight: bold;">Quinta</th>
+					<th style="font-weight: bold;">Sexta</th>
+				</tr>
+				<tr class="turno">
+					<td class="turno" colspan = "6">Matutino</td>
+				</tr>
+				<tr>
+					<td>07:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>08:00</td>
+					<td>Calculo I</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>09:00</td>
+					<td></td>
+					<td>D. Tecnico</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>10:00</td>
+					<td>Geometria</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>11:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr class="turno">
+					<td class="turno" colspan = "6">Vespertino</td>
+				</tr>
+				<tr>
+					<td>13:00</td>
+					<td></td>
+					<td></td>
+					<td>Matematica</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>14:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>15:00</td>
+					<td></td>
+					<td>Fisica I</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>17:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>	
+				<tr>
+					<td>18:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="turno">
+					<td class="turno" colspan = "6">Noturno</td>
+				</tr>
+				<tr>
+					<td>19:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>20:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>21:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>22:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+		</table>-->
+		
+		
+	</div>
+	
+	
+	
+	<!-------------------------RODAPÉ DA PÁGINA---------------------------->
+	<footer>
+			Dados de contato da instituição.
+	</footer>
+	
+	
+	
+
+</body>
+
+</html>

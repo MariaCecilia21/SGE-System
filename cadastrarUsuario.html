@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="SGE.css"/>
+    <script language="JavaScript" src="SGE.js"></script>
+    <script language="JavaScript" src="SGE2.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
+    <link rel="shortcut icon" href="iconeSGE.jpeg" >
+
+    <title>Atividades Extracurriculares</title>
+	
+	<!--LOGO-->
+
+</head>
+
+<body>
+
+	<!---------------------AREA DE SAIR E ID DO USUÁRIO-------------------->
+	<header>
+                <div class="dados">
+                     
+                    <img src="" alt=""/><br>
+                    
+                </div>
+	</header>
+	
+	<!---------------------------MENU ESQUERDO----------------------------->
+	<nav class="menu">
+
+            <img src="logoSGE.jpeg" style="height: 41%;"/>
+            <ul>
+                <li> <a href="inicial.html">Pagina Inicial</a> </li>
+                <li> <a href="aulas.html">Locais/Horários de Aula</a> </li>
+                <li> <a href="boletins.html">Boletins</a> </li>
+                <li> <a href="disciplinas.html">Disciplinas</a> </li>
+                <li> <a href="rematricula.html">Rematrícula</a> </li>
+                <li> <a href="atividades.html">Atividades Extracurriculares</a> </li>
+                <li> <a href="cursos.html">Cursos</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li> 
+                <li><input type="button" class="sair" onclick="logoff()" value="Sair" /></li>
+            </ul>
+
+	</nav>
+
+
+
+	<!-----------------------BOTÃO DADOS DO USUÁRIO------------------------>
+	<div class="usuario">
+            <button onclick="myFunction()" class="inside">Dados do Usuário</button>
+            <div id="caida" class="opcoes">
+            <a href="cadastrarUsuario.html">Cadastrar</a>
+            <a href="alterarUsuario.html">Alterar</a>
+            <a href="verUsuario.html">Visualizar</a>
+            </div>
+	</div>
+			
+			
+			
+	<!------------------------CONTEUDO DA PAGINA--------------------------->
+	<div  class="conteudo">
+            <br>
+            
+            <table class="Tabela">
+                    <tr >
+                        <td colspan="2">Nome: José Alberto da Cunha</td>
+                    </tr>
+                    <tr>
+                       <td colspan="2">Data de Nascimento: 13/03/1982</td>
+                    </tr>
+                    <tr>
+                    <td>RG: 112223334</td>
+                    <td>CPF: 12345678910</td>
+                    </tr>
+                    <tr>
+                    <td>Responsável: </td>
+                    </tr>
+                    <tr>
+                    <td>Ingresso: maio de 2013</td>
+                    <td>Previsão de Termino: </td>
+                    </tr>
+                    <tr>
+                    <td>Telefone: (17) 8888-4545</td>
+                    <td>Telefone Secundário: </td>
+                    </tr>
+                    <tr>
+                    <td>PROFESSOR</td>
+                    </tr>
+                    <tr>
+                    <td>Nº de Matrícula: 123123</td>
+                    </tr>
+                    <tr>
+                    <td>Turno: Integral</td>
+                    <td>Período:</td>
+                    </tr>
+            </table>
+            
+            <button type="button" class="botao" onclick="Action2()" value="Adicionar">Adicionar Usuário</button>
+	
+	</div>
+	
+	
+	
+	<!-------------------------RODAPÉ DA PÁGINA---------------------------->
+	<footer>
+			Dados de contato da instituição.
+	</footer>
+	
+
+</body>
+
+</html>

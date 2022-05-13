@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="SGE.css"/>
+    <script language="JavaScript" src="SGE.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
+    <link rel="shortcut icon" href="iconeSGE.jpeg" >
+
+    <title>Cadastrar Usuário</title>
+	
+	<!--LOGO-->
+
+</head>
+
+<body>
+
+	<!---------------------AREA DE SAIR E ID DO USUÁRIO-------------------->
+	<header>
+                <div class="dados">
+                    
+                    <img src="" alt=""/><br>
+                    
+                </div>
+	</header>
+	
+	<!---------------------------MENU ESQUERDO----------------------------->
+	<nav class="menu">
+
+		<img src="logoSGE.jpeg" style="height: 41%;" alt=""/>
+            <ul>
+                <li> <a href="inicial.html">Pagina Inicial</a> </li>
+                <li> <a href="aulas.html">Locais/Horários de Aula</a> </li>
+                <li> <a href="boletins.html">Boletins</a> </li>
+                <li> <a href="disciplinas.html">Disciplinas</a> </li>
+                <li> <a href="rematricula.html">Rematrícula</a> </li>
+                <li> <a href="atividades.html">Atividades Extracurriculares</a> </li>
+                <li> <a href="cursos.html">Cursos</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li> 
+                <li><input type="button" class="sair" onclick="logoff()" value="Sair" /></li>
+            </ul>
+	
+	</nav>
+
+
+
+	<!-----------------------BOTÃO DADOS DO USUÁRIO------------------------>
+	<div class="usuario">
+	<button onclick="myFunction()" class="inside">Dados do Usuário</button>
+            <div id="caida" class="opcoes">
+                <a href="cadastrarUsuario.html">Cadastrar</a>
+                <a href="alterarUsuario.html">Alterar</a>
+                <a href="verUsuario.html">Visualizar</a>
+            </div>
+	</div>
+			
+			
+			
+	<!------------------------CONTEUDO DA PAGINA--------------------------->
+	<div  class="conteudo">
+            <br>
+	
+            <form class="" >
+
+            <label  >Nome Completo: </label>
+            <input type="text" maxlength="70" size="50" accesskey="a" required/><br><br>
+
+            <label >Data de Nascimento: </label>
+            <input type="date" max="2005-01-01" min="1900-01-01" required/><br><br>
+
+            <label >RG: </label>
+            <input type="text" maxlength="9"  pattern="[0-9]+$" required /><br><br>
+
+            <label >CPF: </label>
+            <input type="text" maxlength="11"  pattern="[0-9]+$" /><br><br>
+
+            <label >Responsável (opcional): </label>
+            <input type="text" maxlength="70" size="50" accesskey="a" /><br><br>
+
+            <label  >Ingresso:</label>
+            <input type="month" name="ingresso" min="2000-01" max="2050-12" required>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label >Previsão de Termino:</label>
+            <input type="month" name="termino" min="2000-01" max="2050-12" /><br><br>
+
+            <label >Telefone:</label>
+            <input type="tel" id="phone" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"  placeholder="(00) 0000-0000" required/>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label >Telefone Secundário:</label>
+            <input type="tel" id="phone1" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="(00) 0000-0000"/><br><br>
+
+            <input type="radio" name="opcao" value="Aluno"/>
+            <label >Aluno</label>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="opcoes" >
+                <option value="curso">Opções de Curso</option>
+                <option>Curso 01</option>	
+                <option>Curso 02</option>
+                <option>Curso 03</option>
+                <option>Curso 04</option>
+                <option>Curso 05</option>
+            </select><br>
+            <input type="radio" name="opcao" value="Professor"/>
+            <label >Professor</label><br>
+            <input type="radio"  name="opcao" value="Coordenador"/>
+            <label >Coordenador</label><br><br>
+
+            <label  >Nº de Matrícula: </label>
+            <input type="text" maxlength="10" pattern="[0-9]+$" required/><br><br>
+
+            <label >Turno:</label>
+            <select name="opcoes">
+                <option value="curso">------</option>
+                <option>Matutino</option>	
+                <option>Vespertino</option>
+                <option>Noturno</option>
+                <option>Integral</option>
+            </select>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label >Período:</label>
+            <select name="opcoes">
+                <option value="periodo">--------</option>
+                <option>1º Período</option>	
+                <option>2º Período</option>
+                <option>3º Período</option>
+                <option>4º Período</option>
+                <option>5º Período</option>
+                <option>6º Período</option>
+                <option>7º Período</option>
+                <option>8º Período</option>
+                <option>9º Período</option>
+                <option>10º Período</option>
+            </select><br><br>
+
+            <input type="submit" value="Salvar"/>
+		
+	</form>
+	
+	</div>
+	
+	
+	
+	<!-------------------------RODAPÉ DA PÁGINA---------------------------->
+	<footer>
+			Dados de contato da instituição.
+	</footer>
+	
+
+</body>
+
+</html>

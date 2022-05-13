@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="SGE1.css"/>
+    <script language="JavaScript" src="SGE.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
+    <link rel="shortcut icon" href="iconeSGE.jpeg" >
+
+    <title>Cadastrar Disciplinas</title>
+	
+	<!--LOGO-->
+
+</head>
+
+<body>
+
+	<!--                AREA DE SAIR E ID DO USUÁRIO              -->
+	<header>
+                <div class="dados">
+                     
+                    <img src="" alt=""/><br>
+                    
+                </div>
+	</header>
+	
+	<!---------------------------MENU ESQUERDO----------------------------->
+	<nav class="menu">
+
+		<img src="logoSGE.jpeg" style="height: 41%;" alt=""/>
+            <ul>
+                <li> <a href="inicial.html">Pagina Inicial</a> </li>
+                <li> <a href="aulas.html">Locais/Horários de Aula</a> </li>
+                <li> <a href="boletins.html">Boletins</a> </li>
+                <li> <a href="disciplinas.html">Disciplinas</a> </li>
+                <li> <a href="rematricula.html">Rematrícula</a> </li>
+                <li> <a href="atividades.html">Atividades Extracurriculares</a> </li>
+                <li> <a href="cursos.html">Cursos</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li> 
+                <li><input type="button" class="sair" onclick="logoff()" value="Sair" /></li>
+            </ul>
+	
+	</nav>
+
+
+
+	<!-----------------------BOTÃO DADOS DO USUÁRIO------------------------>
+	<div class="usuario">
+		<button onclick="myFunction()" class="inside">Dados do Usuário</button>
+			<div id="caida" class="opcoes">
+				<a href="cadastrarUsuario.html">Cadastrar</a>
+				<a href="alterarUsuario.html">Alterar</a>
+				<a href="verUsuario.html">Visualizar</a>
+			</div>
+	</div>
+			
+			
+			
+	<!------------------------CONTEUDO DA PAGINA--------------------------->
+	<div  class="conteudo">
+	<br><br><br>
+	
+	<input class="salvo" type="button" value="Adicionar Disciplina"><br><br><br>
+	
+		<form action="" method="" class="disciplinaCf">
+			
+			<fieldset class="disciplinaCfield">
+				<legend style="text-transform: uppercase;">Cadastro de Disciplina</legend>
+				<label>Ano Letivo:</label>
+					<select class="ano">
+						<option></option>
+						<option id="c1">2013</option>
+						<option id="c1">2014</option>
+						<option id="c1">2015</option>
+						<option id="c1">2016</option>
+						<option id="c1">2017</option>
+						<option id="c1">2018</option>
+						<option id="c2">2019</option>
+						<option id="c3">2020</option>
+						<option id="c4">2021</option>
+					    <option id="c1">2022</option>
+					</select>
+				<label style="text-transform: uppercase; text-align:center;"><br>Dados da Disciplina</label><br>	
+					Nome:
+					<input class="disciplinaCNome" type="text" placeholder="" required>
+					Sigla:
+					<input class="disciplinaC" type="text" placeholder="" required>
+					Código:
+					<input class="disciplinaC" type="number" placeholder="" required><br>
+					Carga Horária:
+					<input class="disciplinaC" type="text" placeholder="00 horas" required>
+					N° de Aulas:
+					<input class="disciplinaC" type="text" placeholder="00 aulas" required><br><br>
+					Professor(a):
+					<input class="disciplinaCNome" type="text" placeholder="" ><br>
+					Contato:
+					<input class="disciplinaCNome" type="email" placeholder="nome@email.com"><br><br>
+					
+					<td class="salvar"><input class="salvo" type="submit" value="Salvar"/></td>
+			</fieldset>		
+		</form>
+	
+	</div>
+	<br><br>
+	
+	
+	
+	<!-------------------------RODAPÉ DA PÁGINA---------------------------->
+	<footer>
+			Dados de contato da instituição.
+	</footer>
+	
+	
+	
+	<!-------------O QUE FAZ FUNCIONAR O BOTÃO DADOS DO USUÁRIO------------->
+
+</body>
+
+</html>

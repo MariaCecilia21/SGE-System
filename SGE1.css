@@ -1,0 +1,324 @@
+.menu
+{
+	line-height:30px; 
+	background-color:rgb(04, 19, 26); 
+	height:100%; 
+	width:20%; 
+	position:fixed;
+	right:0;
+	top:0;
+}
+
+a
+{
+	text-decoration:none;
+	color:white;
+}
+
+ul
+{
+	list-style-type: none;
+        
+}
+
+.inside {
+    background-color:rgb(54,54,54); 
+    color: white;
+    padding:15px;
+    font-size:0.9em;
+    border:none;
+    cursor:pointer;
+	
+}
+
+.opcoes
+{
+    display: none;
+	background-color:lightgrey ; 
+
+	position:absolute;
+	overflow: auto;
+	z-index: 1;
+	text-align:center;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	min-width: 160px;
+}
+
+.opcoes a:hover  {
+    background:grey;
+	text-decoration:none;
+}
+
+.opcoes a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.usuario
+{
+    float:left; 
+
+	display: inline-block;
+
+	position:relative;
+	
+}
+
+footer
+{
+	background-color:rgb(04, 19, 26);
+        color:white;
+	bottom:0;
+	padding:30px;
+	width:85%;
+	margin-top: auto;
+}
+
+.conteudo
+{
+
+	width:80%;
+	
+}
+
+.show
+{ 
+	display:block;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family:'paprika';
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: aliceblue;
+    
+}
+.editor
+{
+    float: right;
+    border: none;
+}
+
+.edicao
+{
+    float:right;
+    position:relative;
+    display: inline-block;
+    border:none;
+    cursor:pointer;
+    width: 20px;
+}
+
+.sair 
+{
+	padding: 20px;
+        margin:10px;
+	color: red;
+        float:right;
+        position: relative;
+        background: rgb(04,19,26);
+        font-size: 1.3em;
+	
+}
+
+.centro
+{
+    align-content: center;
+}
+
+.dados
+{
+    border:solid;
+    float:left; 
+    width:10%;
+    margin-bottom: 5px;
+    padding: 5px;
+    height: 20px
+}
+
+/*-----------------------------------------------------GIOVANNA---------------------------------------------------------*/
+table, th, td
+{
+	border:1px solid black;
+}
+
+/*---------------formatação básica das tabelas------------------*/
+table
+{
+	
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: separate;
+}
+
+.turno
+{
+	background-color: darkgray;
+}
+
+/*---------------------Tabelas aulas.html-----------------------*/
+th
+{
+	
+	background-color: gray;
+	border: 1px solid black;
+}
+
+td
+{
+	
+	min-width: 10%;
+	text-align: center;
+	border: 1px solid black;
+}
+
+tr:hover
+{
+	background-color: lightgrey;
+}
+/*----------------------titulo de tabelas------------------------*/
+caption
+{
+	color: grey31;
+	text-align: center;
+	text-transform: uppercase;
+	line-height:1.8;
+	font-weight: bold;
+}
+
+/*----------tabela do botão salvar/enviar cadastrarAulas.html----------*/
+.enviar
+{
+	border-right-style: hidden;
+	border-bottom-style: hidden;
+	border-left-style: hidden;
+	border-top-style: hidden;
+	width: 7%;
+	background-color: white;
+        float: right;
+        
+}
+tr.enviar:hover
+{
+	background-color: white;
+}
+/*---------botão de enviar/salvar cadastrarAulas.html--------------*/
+.salvo 
+{
+	padding: 10px 20px;
+	border-radius: 4px;
+	background-color: darkgray;
+	color: white;
+	border-color: darkgray;
+       
+	
+}
+
+.ok
+{
+	border: 1px solid dimgray;
+	background-color: gray;
+	color:white;
+	width: 88px;
+	
+}
+
+/*---------------formulario Cadastrar cadastrarAulas.html----------*/
+tr, .ta:hover
+{
+	background-color: transparent;
+}
+
+input, button
+{
+    font-family:'paprika';
+    border: hidden;
+    font-size:0.9em;
+    outline: none;
+}
+
+input, button:hover
+{
+    cursor:pointer;
+}
+
+/*------------abas disciplinas.html-----------------*/
+
+.infos p 
+{
+	display: none;
+	background-color: lightgrey;
+	border: 10px solid lightgrey;
+}
+.infos p:target 
+{
+	display: block;
+	background-color: white;
+	border: 1px solid black;
+	border-style: double;
+	width: 600px;
+}
+
+.infos p:not(:target) {display: none}
+.infos p:target {display: block}
+
+.materias
+{
+	background-color: gray;
+	border-radius: 2px;
+	border: 1px solid black;
+	color: white;
+	min-width: 30px;
+	
+}
+
+/*---------------------Opções - aulas.html----------------------------*/
+.aulas
+{
+	width: 30%;
+	border-color: dimgray;
+}
+
+/*--------------------Estilo:MEcadastrarDisciplinas.html----------------*/
+
+.disciplinaC
+{
+	border: 1px solid dimgray;
+	max-width: 15px;
+	
+}
+.disciplinaCNome
+{
+	border: 1px solid dimgray;
+	min-width: 305px;
+	
+}
+
+.disciplinaCfield, .usuarioDados
+{
+	border: 1px solid dimgray;
+	width: 70%;
+	
+}
+/*--------------------verUsuario.html----------------------------*/
+.usuarioDados, .usuarioCurso
+{
+	border: 1px solid lightgrey;
+	width: 600px;
+	
+}
+
+.cCursos
+{
+    margin:10px;
+    padding:10px;
+}

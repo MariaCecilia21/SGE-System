@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="SGE1.css"/>
+    <script language="JavaScript" src="SGE.js"></script>
+    <script language="JavaScript" src="SGE2.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
+    <link rel="shortcut icon" href="iconeSGE.jpeg" >
+
+    <title>Disciplinas</title>
+	
+	<!--LOGO-->
+
+</head>
+
+<body>
+
+	<!---------------------AREA DE SAIR E ID DO USUÁRIO-------------------->
+	<header>
+                <div class="dados">
+                     
+                    <img src="" alt=""/><br>
+                    
+                </div>
+	</header>
+	
+	<!---------------------------MENU ESQUERDO----------------------------->
+	<nav class="menu">
+
+		<img src="logoSGE.jpeg" style="height: 41%;" alt=""/>
+            <ul>
+                <li> <a href="inicial.html">Pagina Inicial</a> </li>
+                <li> <a href="aulas.html">Locais/Horários de Aula</a> </li>
+                <li> <a href="boletins.html">Boletins</a> </li>
+                <li> <a href="disciplinas.html">Disciplinas</a> </li>
+                <li> <a href="rematricula.html">Rematrícula</a> </li>
+                <li> <a href="atividades.html">Atividades Extracurriculares</a> </li>
+                <li> <a href="cursos.html">Cursos</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li> 
+                <li><input type="button" class="sair" onclick="logoff()" value="Sair" /></li>
+            </ul>
+	
+	</nav>
+
+
+
+	<!-----------------------BOTÃO DADOS DO USUÁRIO------------------------>
+	<div class="usuario">
+		<button onclick="myFunction()" class="inside">Dados do Usuário</button>
+			<div id="caida" class="opcoes">
+				<a href="cadastrarUsuario.html">Cadastrar</a>
+				<a href="alterarUsuario.html">Alterar</a>
+				<a href="verUsuario.html">Visualizar</a>
+			</div>
+	</div>
+			
+	
+	<!------------------------CONTEUDO DA PAGINA--------------------------->
+	<div  class="conteudo">
+            
+            <button type="button" onclick="Action5()" value="Cadastrar" class="editor"><img src="edit-file.png" class="edicao"/></button><br>
+	
+		<p class="verDisciplinas">
+			
+			<a class="materias" href="#d1">Calculo I</a>
+			<a class="materias" href="#d2">Geometria</a>
+			<a class="materias" href="#d3">D. Tecnico</a>
+			<a class="materias" href="#d4">Física I</a>
+			<a class="materias" href="#d5">Matemática</a>
+			
+		<div class="infos">
+			<p id="d1">
+				Nome: Calculo I&ensp;&ensp;&ensp;&ensp;	Sigla: CAL&ensp;&ensp;&ensp;&ensp;		Código: 0012<br>
+				Carga Horária: 6 hrs&ensp;&ensp;&ensp;&ensp;	Nº de Aulas: 70<br>
+				Professor: <br>
+				Contato: <br><br>
+				<a href="participantes.html"><input class="ok" type="button" value="Participantes"/></a>
+				<br>
+			</p>
+			<p id="d2">
+				Nome: Geometria&ensp;&ensp;&ensp;&ensp;	Sigla: GEO&ensp;&ensp;&ensp;&ensp;		Código: 0008<br>
+				Carga Horária: 4 hrs&ensp;&ensp;&ensp;&ensp;	Nº de Aulas: 50<br>
+				Professor: <br>
+				Contato: <br><br>
+				<a href="participantes.html"><input class="ok" type="button" value="Participantes"/></a>
+				<br>
+			</p>
+			<p id="d3">
+				Nome: Desenho Técnico&ensp;&ensp;&ensp;&ensp;	Sigla: DNT&ensp;&ensp;&ensp;&ensp;		Código: 0023<br>
+				Carga Horária: 6 hrs&ensp;&ensp;&ensp;&ensp;	Nº de Aulas: 70<br>
+				Professor: <br>
+				Contato: <br><br>
+				<a href="participantes.html"><input class="ok" type="button" value="Participantes"/></a>
+				<br>
+			</p>
+			<p id="d4">
+				Nome: Física I&ensp;&ensp;&ensp;&ensp;	Sigla: FIS&ensp;&ensp;&ensp;&ensp;		Código: 0004<br>
+				Carga Horária: 4 hrs&ensp;&ensp;&ensp;&ensp;	Nº de Aulas: 50<br>
+				Professor: <br>
+				Contato: <br><br>
+				<a href="participantes.html"><input class="ok" type="button" value="Participantes"/></a>
+				<br>
+			</p>
+			<p id="d5">
+				Nome: Matemática&ensp;&ensp;&ensp;&ensp;	Sigla: MAT&ensp;&ensp;&ensp;&ensp;		Código: 0015<br>
+				Carga Horária: 6 hrs&ensp;&ensp;&ensp;&ensp;	Nº de Aulas: 70<br>
+				Professor: José Alberto<br>
+				Contato: albertoJose@email.com<br><br>
+				<a href="participantes.html"><input class="ok" type="button" value="Participantes"/></a>
+				<br>
+			</p>
+			<br>
+                </div>	
+		
+	</div>
+	<!-------------------------RODAPÉ DA PÁGINA---------------------------->
+	<footer>
+			Dados de contato da instituição.
+	</footer>
+	
+	
+
+	
+	<!-------------O QUE FAZ FUNCIONAR O BOTÃO DADOS DO USUÁRIO------------->
+
+</body>
+
+</html>

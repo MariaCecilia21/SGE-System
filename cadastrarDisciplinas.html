@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="SGE1.css"/>
+	<script language="JavaScript" src="SGE.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
+    <link rel="shortcut icon" href="iconeSGE.jpeg" >
+
+    <title>Cadastrar Disciplinas</title>
+	
+	<!--LOGO-->
+
+</head>
+
+<body>
+
+	<!--                AREA DE SAIR E ID DO USUÁRIO              -->
+	<header>
+                <div class="dados">
+                    
+                    <img src="" alt=""/><br>
+                    
+                </div>
+	</header>
+	
+	<!---------------------------MENU ESQUERDO----------------------------->
+	<nav class="menu">
+
+		<img src="logoSGE.jpeg" style="height: 41%;" alt=""/>
+            <ul>
+                <li> <a href="inicial.html">Pagina Inicial</a> </li>
+                <li> <a href="aulas.html">Locais/Horários de Aula</a> </li>
+                <li> <a href="boletins.html">Boletins</a> </li>
+                <li> <a href="disciplinas.html">Disciplinas</a> </li>
+                <li> <a href="rematricula.html">Rematrícula</a> </li>
+                <li> <a href="atividades.html">Atividades Extracurriculares</a> </li>
+                <li> <a href="cursos.html">Cursos</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li> 
+                <li><input type="button" class="sair" onclick="logoff()" value="Sair" /></li>
+            </ul>
+	
+	</nav>
+
+
+
+	<!-----------------------BOTÃO DADOS DO USUÁRIO------------------------>
+	<div class="usuario">
+		<button onclick="myFunction()" class="inside">Dados do Usuário</button>
+			<div id="caida" class="opcoes">
+				<a href="cadastrarUsuario.html">Cadastrar</a>
+				<a href="alterarUsuario.html">Alterar</a>
+				<a href="verUsuario.html">Visualizar</a>
+			</div>
+	</div>
+			
+	<!------------------------CONTEUDO DA PAGINA--------------------------->
+	<div  class="conteudo">
+	
+		<form class="cCursos" action="" >
+                    <br>
+			<label style="font-weight: bold;">Cursos Disponíveis:<br/><br/></label>
+			<input type="radio" id="oc1">Engenharia Mecatrônica<br/>
+			<input type="radio" id="oc2">Ciência da Computação<br/>
+			<input type="radio" id="oc3">Engenharia de Automação<br/>
+			<input type="radio" id="oc4">Sistemas de Informação<br/><br/>
+			
+			<a href="MEcadastrarDisciplinas.html"><input class="ok" type="button" value="OK"/></a><br><br>
+			
+		</form>	
+	</div>
+	
+	
+	
+	<!-------------------------RODAPÉ DA PÁGINA---------------------------->
+	<footer>
+			Dados de contato da instituição.
+	</footer>
+	
+	
+	
+	<!-------------O QUE FAZ FUNCIONAR O BOTÃO DADOS DO USUÁRIO------------->
+
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="SGE2.css"/>
+    <script language="JavaScript" src="SGE.js"></script>
+    <script language="JavaScript" src="SGE2.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
+    <link rel="shortcut icon" href="iconeSGE.jpeg" >
+    
+
+    <title>Visualizar Cursos</title>
+    
+    
+	
+	<!--LOGO-->
+
+</head>
+
+<body>
+
+	<!---------------------AREA DE SAIR E ID DO USUÁRIO-------------------->
+	<header>
+		
+                <div class="dados">
+                    
+                    <img src="" alt=""/><br>
+                    
+                </div>
+	</header>
+	
+	<!---------------------------MENU ESQUERDO----------------------------->
+	<nav class="menu">
+            
+            <img src="logoSGE.jpeg" style="height: 41%;"/>
+            <ul >
+                <li> <a href="inicial.html">Pagina Inicial</a> </li>
+                <li> <a href="aulas.html">Locais/Horários de Aula</a> </li>
+                <li> <a href="boletins.html">Boletins</a> </li>
+                <li> <a href="disciplinas.html">Disciplinas</a> </li>
+                <li> <a href="rematricula.html">Rematrícula</a> </li>
+                <li> <a href="atividades.html">Atividades Extracurriculares</a> </li>
+                <li> <a href="cursos.html">Cursos</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li> 
+                <li><input type="button" class="sair" onclick="logoff()" value="Sair" /></li>
+            </ul>
+	
+	</nav>
+
+
+
+	<!-----------------------BOTÃO DADOS DO USUÁRIO------------------------>
+	<div class="usuario">
+	<button onclick="myFunction()" class="inside">Dados do Usuário</button>
+            <div id="caida" class="opcoes">
+                <a href="cadastrarUsuario.html">Cadastrar</a>
+                <a href="alterarUsuario.html">Alterar</a>
+                <a href="verUsuario.html">Visualizar</a>
+            </div>
+	</div>
+			
+			
+			
+	<!------------------------CONTEUDO DA PAGINA--------------------------->
+	<div  class="conteudo">
+            
+            <button type="button" onclick="Action9()" value="Cadastrar" class="editor"><img src="edit-file.png" class="edicao"/></button><br>
+            <br>
+
+	<div id="alinha2Lados">
+
+	<div id="lado_esquerdo">
+
+	
+    <fieldset class="fieldset-curso">
+       <legend >Selecione a área do curso que deseja visualizar</legend><br>
+   
+           <label style="font-weight: bold;">Áreas:</label>
+       
+       <select id="select">
+         <option></option>  
+       <option>Bacharelado</option>
+       <option>Licenciatura</option>
+       <option>Técnico</option>
+       <option>Técnologo</option>
+       </select><br><br>
+   
+       <button id="btn-1" onclick="alteraValores()">OK</button>
+    
+     </fieldset>
+            <br><br>
+     <!--término da segunda seção-->
+   
+   <section>
+   
+   <div id="box_mat">
+       <label id="tag" style="font-weight: bold;">Cursos da área de Bacharelado</label>
+   </div>
+   
+   <div id="alinha">
+   
+       <div id="titulos_1">
+       <label>Disciplina</label>
+       </div>
+   
+       <div id="titulos_2" >
+       <label>Carga horária</label>
+       </div>
+   
+       <div id="titulos_3" >
+       <label>Período</label>
+       </div>
+   
+       <div id="titulos">
+       <label>Professor(a)</label>
+       </div>
+   </div>
+   
+   
+      <div id="alinha_2">
+   
+       <div id="box_text_1">
+        <label id="disciplina_1">Engenharia mecatrônica</label>
+       </div>
+      
+       <div id="box_text_2">
+        <label id="horas">5.000 horas</label>
+      </div>
+      
+      <div id="box_text_3">
+          <label id="periodos">10</label>
+      </div>
+      
+      <div id="box_text_4">
+        <label id="professor">João Almeida</label>
+      </div>
+      
+      </div>
+   
+   </section><br><br>
+   
+   
+   <!--Botão de enviar
+   
+       <div id="btn-enviar">
+           <button>Enviar</button>
+       </div>-->
+   
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+	
+     
+<script>
+
+function alteraValores(){
+
+    var select = document.getElementById('select');
+    var valor_select = select.options[select.selectedIndex].value;
+
+
+    if(valor_select=="Técnico"){
+
+    var disciplina= document.getElementById('disciplina_1');
+    var horas= document.getElementById('horas');
+    var periodo= document.getElementById('periodos');
+    var professor= document.getElementById('professor');
+    var titulo= document.getElementById('tag');
+
+    disciplina.innerHTML  = "Técnico em Logística";
+    horas.innerHTML  = "2.000 horas";
+    periodo.innerHTML  = "4";
+    professor.innerHTML  = "Fernando Albuquerque";
+    titulo.innerHTML  = "Cursos Técnicos";
+    
+
+}else if(valor_select=="Bacharelado"){
+
+var disciplina= document.getElementById('disciplina_1');
+var horas= document.getElementById('horas');
+var periodo= document.getElementById('periodos');
+var professor= document.getElementById('professor');
+var titulo= document.getElementById('tag');
+
+disciplina.innerHTML  = "Engenharia mecatrônica";
+horas.innerHTML  = "5.000 horas";
+periodo.innerHTML  = "10";
+professor.innerHTML  = "João Almeida";
+titulo.innerHTML  = "Cursos da Área de Bacharelado";
+
+}else if(valor_select=="Licenciatura"){
+
+var disciplina= document.getElementById('disciplina_1');
+var horas= document.getElementById('horas');
+var periodo= document.getElementById('periodos');
+var professor= document.getElementById('professor');
+var titulo= document.getElementById('tag');
+
+disciplina.innerHTML  = "Licenciatura em Geografia";
+horas.innerHTML  = "5.000 horas";
+periodo.innerHTML  = "4";
+professor.innerHTML  = "Ana Gabriela";
+titulo.innerHTML  = "Cursos da Área de Licenciatura";
+
+}else if(valor_select=="Técnologo"){
+
+var disciplina= document.getElementById('disciplina_1');
+var horas= document.getElementById('horas');
+var periodo= document.getElementById('periodos');
+var professor= document.getElementById('professor');
+var titulo= document.getElementById('tag');
+
+disciplina.innerHTML  = "Processos Gerenciais";
+horas.innerHTML  = "1.800 horas";
+periodo.innerHTML  = "4";
+professor.innerHTML  = "Henrique Santos";
+titulo.innerHTML  = "Cursos da Área de Tecnologia";
+}
+
+
+
+}
+
+
+
+</script>
+	
+	
+	
+	<!-------------------------RODAPÉ DA PÁGINA---------------------------->
+	<footer>
+			Dados de contato da instituição.
+	</footer>
+	
+	
+
+</body>
+
+</html>
